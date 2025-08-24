@@ -1,9 +1,6 @@
 # email_messanger/src/main.py
 
 import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from utils import validate_email
 from email_messenger import EmailMessenger
 
 
@@ -11,8 +8,8 @@ def main():
     sender_email = input("Enter your email: ")
     sender_password = input("Enter your password: ")
     recipient_email = input("Enter recipient email: ")
-    smtp_server = "localhost"
 
+    smtp_server = "smtp.mailersend.net"
     smtp_port = 587
 
     table_data = {
